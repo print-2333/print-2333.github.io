@@ -70,6 +70,8 @@ nav.header a:hover {
   background-color: #f1f1f1;
   padding-left: 20px;
   position:fixed;
+  top:30px;
+  right:1px;
 }
  
 /* 图像部分 */
@@ -83,7 +85,9 @@ nav.header a:hover {
 /* 文章卡片效果 */
 .card {
   background-color: white;
-  padding: 20px;
+  padding: 20px;<div class="row">
+     <div class="leftcolumn">
+     
   margin-top: 20px;
   height:390px;
 }
