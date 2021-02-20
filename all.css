@@ -83,9 +83,7 @@ nav.header a:hover {
 /* 文章卡片效果 */
 .card {
   background-color: white;
-  padding: 20px;<div class="row">
-     <div class="leftcolumn">
-     
+  padding: 20px;
   margin-top: 20px;
   height:390px;
 }
@@ -109,7 +107,7 @@ font-size:20px;
 .cards {
   background-color: white;
   padding: 20px;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 
