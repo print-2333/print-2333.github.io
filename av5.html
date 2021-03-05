@@ -27,12 +27,15 @@ weekday[6]="星期六";
 </script>
 
 <style>
-.head{
+
+head.{
+
+}
+.background{
 background-image:url(https://print-2333.github.io/独角兽-2.jpg);
-background-repeat:x-repeat;
-height:220px; 
-width:100%;
-opacity:0.5;
+background-repeat:no-repeat;
+background-size:100% 100%;
+opacity:0.7;
 }
 
 .homepage{
@@ -42,13 +45,11 @@ margin-top: 20px;
 }
 
 .navigation-bar{
-font-size:20px;
+font-size:30px;
+text-decoration:none;
+color:red
 }
 
-ul.a {
-    color: red;
-    text-decoration:none;
-}
 </style>
 </head>
 
@@ -57,15 +58,13 @@ ul.a {
 <body>
 
 <div class="head">
-<h1>print("2333")</h1>
-
-
-<ul>
-   <a class="navigation-bar" href="https://print-2333.github.io/">主页</a>
-   <a class="navigation-bar" href="https://print-2333.github.io/av2">专栏</a>
-   <a class="navigation-bar" href="https://print-2333.github.io/log">公告</a>
-   <a class="navigation-bar" href="https://print-2333.github.io/av4" style="float:right"> </a>
-</ul>
+   <p>print("2333")</p>
+   <div class="background">
+      <a class="navigation-bar" href="https://print-2333.github.io/">主页</a>
+      <a class="navigation-bar" href="https://print-2333.github.io/av2">专栏</a>
+      <a class="navigation-bar" href="https://print-2333.github.io/log">公告</a>
+      <a class="navigation-bar" href="https://print-2333.github.io/av4" style="float:right"> </a>
+   </div>
 </div>
 
 <div class="homepage">
