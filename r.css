@@ -12,7 +12,9 @@ body {
 nav.header
  {
   background-image:url(https://print-2333.github.io/独角兽-2.jpg);
-  background-repeat:x-repeat
+  background-repeat:x-repeat;
+  height:100px; 
+  width:100%;
   }
 a.headers{
   line-height:0px                        
@@ -26,12 +28,7 @@ nav.header a:hover {
   color: red
   }
  
-/* 导航条 */
-.topnav {
-  overflow: hidden;
-  background-color:pink;
-}
- 
+
 /* 导航条链接 */
 .topnav a {
   float: left;
@@ -41,15 +38,8 @@ nav.header a:hover {
   padding: 14px 16px;
   text-decoration: none;
 }
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
- 
+
+
 /* 链接颜色修改 */
 .topnav a:hover {
   background-color: #ddd;
@@ -102,6 +92,8 @@ a.textcontent{
 p.text{
 font-size:20px;
 }
+
+
 /* 文章卡片效果 */
 .cards {
   background-color: white;
