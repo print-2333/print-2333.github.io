@@ -47,20 +47,6 @@ nav.header a:hover {
 }
  
 /* 创建两列 */
-/* 左侧栏*/
-
- 
-/* 右侧栏 */
-.rightcolumn {
-  background-color: #f1f1f1;
-  padding-left: 20px;
-    position:fixed;
-    right:5px;
-    top:180px;
-
-}
-}
- 
 /* 图像部分 */
 .fakeimg {
   widthkground-color: #aaa;
@@ -93,25 +79,6 @@ p.text{
 font-size:20px;
 }
 
-
-/* 文章卡片效果 */
-.cards {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-
-/* 列后面清除浮动 */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
- 
-/* lay: table;
-  clear: both;
-}
  
 /* 底部 */
 .footer {
