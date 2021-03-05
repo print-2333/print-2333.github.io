@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>print2333</title>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9841e7dfc253c5237d5db2cd35049e0a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+
+var d=new Date();
+var weekday=new Array(7)
+weekday[0]="星期日"
+weekday[1]="星期一"
+weekday[2]="星期二"
+weekday[3]="星期三"
+weekday[4]="星期四"
+weekday[5]="星期五"
+weekday[6]="星期六";
+</script>
+
+<style>
+.head{
+background-image:url(https://print-2333.github.io/独角兽-2.jpg);
+background-repeat:x-repeat;
+height:100px; 
+width:100%;
+}
+
+.homepage{
+background-color: white;
+padding: 20px;
+margin-top: 20px;
+}
+
+.navigation-bar{
+font-size:20px;
+}
+	
+</style>
+</head>
+
+
+
+<body>
+
+<div class="head">
+       <a class="navigation-bar" href="https://print-2333.github.io/">主页</a>
+       <a class="navigation-bar" href="https://print-2333.github.io/av2">专栏</a>
+       <a class="navigation-bar" href="https://print-2333.github.io/log">公告</a>
+       <a class="navigation-bar" href="https://print-2333.github.io/av4" style="float:right"> </a>
+    
+</div>
+
+<div class="homepage">
+
+</div>
+
+
+
+
+
+</body>
+</html>
