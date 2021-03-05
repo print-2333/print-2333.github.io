@@ -15,7 +15,6 @@ var _hmt = _hmt || [];
 </script>
 
 <script>
-
 var d=new Date();
 var weekday=new Array(7)
 weekday[0]="星期日"
@@ -31,7 +30,7 @@ weekday[6]="星期六";
 .head{
 background-image:url(https://print-2333.github.io/独角兽-2.jpg);
 background-repeat:x-repeat;
-height:100px; 
+height:250px; 
 width:100%;
 }
 
@@ -44,7 +43,20 @@ margin-top: 20px;
 .navigation-bar{
 font-size:20px;
 }
-	
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:red;
+}
+
+li a {
+    display:black;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
 </style>
 </head>
 
@@ -53,11 +65,12 @@ font-size:20px;
 <body>
 
 <div class="head">
-       <a class="navigation-bar" href="https://print-2333.github.io/">主页</a>
-       <a class="navigation-bar" href="https://print-2333.github.io/av2">专栏</a>
-       <a class="navigation-bar" href="https://print-2333.github.io/log">公告</a>
-       <a class="navigation-bar" href="https://print-2333.github.io/av4" style="float:right"> </a>
-    
+<ul>
+   <li><a class="navigation-bar" href="https://print-2333.github.io/">主页</a></li>
+   <li><a class="navigation-bar" href="https://print-2333.github.io/av2">专栏</a></li>
+   <li><a class="navigation-bar" href="https://print-2333.github.io/log">公告</a></li>
+   <li><a class="navigation-bar" href="https://print-2333.github.io/av4" style="float:right"> </a></li>
+</ul>
 </div>
 
 <div class="homepage">
