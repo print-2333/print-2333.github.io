@@ -60,13 +60,12 @@ nav.header a:hover {
 /*左侧栏 */
 .leftcolumn {   
   float: left;
-  width: 60%;
+  width: 40%;
 }
  /*中侧栏 */
 .centercolumn {   
   float: left;
   width: 20%;
-  background-color: #f1f1f1;
 }
 
 
