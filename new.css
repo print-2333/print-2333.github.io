@@ -57,14 +57,33 @@ nav.header a:hover {
 }
  
 /* 创建两列 */
-/* Left column */
+/*左侧栏 */
 .leftcolumn {   
+  float: left;
+  width: 60%;
+}
+ /*中侧栏 */
+.centercolumn {   
+  float: left;
+  width: 20%;
+  background-color: #f1f1f1;
+}
+
+
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 20%;
+}
+
+/*左侧栏 */
+.left {   
   float: left;
   width: 100%;
 }
- 
-/* 右侧栏 */
-.rightcolumn {
+
+
+.right {
   float: left;
   width: 30%;
   background-color: #f1f1f1;
@@ -74,8 +93,9 @@ nav.header a:hover {
     top:180px;
 
 }
-}
  
+
+
 /* 图像部分 */
 .fakeimg {p
   widthkground-color: #aaa;
