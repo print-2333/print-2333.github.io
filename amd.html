@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-hans" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"cdfe7d0876",applicationID:"55450438"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){retur
+<meta itemprop="acquia_lift:content_title" content="欢迎来到 AMD" />
+<meta itemprop="acquia_lift:content_type" content="landing_page" />
+<meta itemprop="acquia_lift:page_type" content="node page" />
+<meta itemprop="acquia_lift:context_language" content="zh-hans" />
+<meta itemprop="acquia_lift:content_section" content="" />
+<meta itemprop="acquia_lift:content_keywords" content="" />
+<meta itemprop="acquia_lift:post_id" content="12556" />
+<meta itemprop="acquia_lift:content_uuid" content="4dccc22b-8366-47f5-abf7-0c51db1fa7d8" />
+<meta itemprop="acquia_lift:published_date" content="1532546103" />
+<meta itemprop="acquia_lift:persona" content="" />
+<meta itemprop="acquia_lift:engagement_score" content="1" />
+<meta itemprop="acquia_lift:account_id" content="AMD" />
+<meta itemprop="acquia_lift:site_id" content="amd_prod" />
+<meta itemprop="acquia_lift:contentOrigin" content="" />
+<meta itemprop="acquia_lift:liftAssetsURL" content="https://builder.lift.acquia.com" />
+<meta itemprop="acquia_lift:liftDecisionAPIURL" content="https://us-east-1-decisionapi.lift.acquia.com" />
+<meta itemprop="acquia_lift:bootstrapMode" content="manual" />
+<meta itemprop="acquia_lift:contentReplacementMode" content="trusted" />
+<script src="https://builder.lift.acquia.com/lift.js" async></script>
+<meta name="description" content="无论是数据中心、企业计算解决方案还是游戏体验，AMD 处理器、显卡、技术和软件助你发挥优势、占尽先机。 寻找属于您的解决方案！" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="https://www.amd.com/zh-hans/home" />
+<meta property="og:title" content="欢迎来到 AMD" />
+<meta property="og:image" content="https://www.amd.com/system/files/2020-06/amd-default-social-image-1200x628.jpg" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>#paragraph-1099236 .inner-content .field--name-field-nested-paragraph-33-33-33 .col-flex-sm-4 { background-color: rgba(225,225,226,0); }</style>
+<style>#paragraph-1099236 .video-bg-container + .inner-content { background-color: rgba(225,225,226,0) !important; }</style>
+<style>#paragraph-1099236, .paragraph-1099236 { background-color: rgba(225,225,226,0); }</style>
+<style>#paragraph-830926 { background-color: rgba(255,255,255,1); }</style>
+<style>#paragraph-960851, .paragraph-960851 { background-color: rgba(225,225,226,0); }</style>
+<style>#paragraph-1204336 .video-bg-container + .inner-content { background-color: rgba(225,225,226,0) !important; }</style>
+<style>#paragraph-1204336, .paragraph-1204336 { background-color: rgba(225,225,226,0); }</style>
+<style> #paragraph-1204331.paragraph--type--image-text .paragraph-content { background-color: rgba(255,255,255,0.9); }</style>
+<style>#paragraph-1187861 .inner-content .field--name-field-nested-paragraph-50-50 .field__item, .paragraph-1187861 .inner-content .field--name-field-nested-paragraph-50-50 .field__item { background-color: rgba(225,225,226,0); }</style>
+<style>#paragraph-1187861, .paragraph-1187861 { background-color: rgba(51,51,51,1); }</style>
+<style>#paragraph-1161476 .inner-content .field--name-field-nested-paragraph-33-33-33 .col-flex-sm-4 { background-color: rgba(225,225,226,0); }</style>
+<style>#paragraph-1161476 .video-bg-container + .inner-content { background-color: rgba(225,225,226,0) !important; }</style>
+<style>#paragraph-1161476, .paragraph-1161476 { background-color: rgba(255,255,255,1); }</style>
+<style>#paragraph-1207471 .video-bg-container + .inner-content { background-color: rgba(225,225,226,0) !important; }</style>
+
+<style>#paragraph-1207471, .paragraph-1207471 { background-color: rgba(0,0,0,1); }</style>
+<link rel="alternate" hreflang="en" href="https://www.amd.com/en/home" />
+<link rel="alternate" hreflang="zh-hans" href="https://www.amd.com/zh-hans/home" />
+<link rel="alternate" hreflang="zh-hant" href="https://www.amd.com/zh-hant/home" />
+<link rel="alternate" hreflang="fr" href="https://www.amd.com/fr/home" />
+<link rel="alternate" hreflang="de" href="https://www.amd.com/de/home" />
+<link rel="alternate" hreflang="ja" href="https://www.amd.com/ja/home" />
+<link rel="alternate" hreflang="ko" href="https://www.amd.com/ko/home" />
+<link rel="alternate" hreflang="pt-br" href="https://www.amd.com/pt/home" />
+<link rel="alternate" hreflang="ru" href="https://www.amd.com/ru/home" />
+<link rel="alternate" hreflang="es" href="https://www.amd.com/es/home" />
+<link rel="shortcut icon" href="/themes/custom/amd/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://www.amd.com/zh-hans/home" />
+<link rel="shortlink" href="https://www.amd.com/zh-hans/node/12556" />
+<link rel="revision" href="https://www.amd.com/zh-hans/home" />
+
+    <title>欢迎来到 AMD ׀ 高性能处理器和显卡</title>
+
+
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__mrcMIUhtGua3QYVK38h4c7DwYoY9fus0wSGBtf49yw.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_mesBe8qp62QyYgZ-Rg-6HQiXlAW5qeK8hvps0O2xnbQ.css" />
+<link rel="stylesheet" media="all" href="/libraries/aos/dist/aos.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/sites/default/files/js/js_psKLGa6TwTO0PpuwJbjvEshRpMSPm0cvbMy6DmELuNQ.js"></script>
+
+  </head>
+  <body
+       class="path-node page-node-type-landing-page"
+      >
+        <a name="top"></a>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      跳转到主要内容
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<header id="home" role="banner">
+        <div class="region region-header">
+        <nav class="language-switcher-language-url block block-language block-language-blocklanguage-interface" id="block-languageswitcher" role="navigation" data-block-plugin-id="language_block:language_interface" aria-label="language">
+  
+      <h2>语言</h2>
+    
+      <ul class="links"><li hreflang="en" data-drupal-link-system-path="node/12556" class="en"><a href="/en/home" class="language-link" hreflang="en" data-drupal-link-system-path="node/12556">English</a></li><li hreflang="zh-hans" data-drupal-link-system-path="node/12556" class="zh-hans is-active"><a href="/zh-hans/home" class="language-link is-active" hreflang="zh-hans" data-drupal-link-system-path="node/12556">简体中文</a></li><li hreflang="zh-hant" data-drupal-link-system-path="node/12556" class="zh-hant"><a href="/zh-hant/home" class="language-link" hreflang="zh-hant" data-drupal-link-system-path="node/12556">繁體中文</a></li><li hreflang="fr" data-drupal-link-system-path="node/12556" class="fr"><a href="/fr/home" class="language-link" hreflang="fr" data-drupal-link-system-path="node/12556">Français</a></li><li hreflang="de" data-drupal-link-system-path="node/12556" class="de"><a href="/de/home" class="language-link" hreflang="de" data-drupal-link-system-path="node/12556">Deutsch</a></li><li hreflang="ja" data-drupal-link-system-path="node/12556" class="ja"><a href="/ja/home" class="language-link" hreflang="ja" data-drupal-link-system-path="node/12556">日本語</a></li><li hreflang="ko" data-drupal-link-system-path="node/12556" class="ko"><a href="/ko/home" class="language-link" hreflang="ko" data-drupal-link-system-path="node/12556">한국어 (Korean)</a></li><li hreflang="pt-br" data-drupal-link-system-path="node/12556" class="pt-br"><a href="/pt/home" class="language-link" hreflang="pt-br" data-drupal-link-system-path="node/12556">Português</a></li><li hreflang="ru" data-drupal-link-system-path="node/12556" class="ru"><a href="/ru/home" class="language-link" hreflang="ru" data-drupal-link-system-path="node/12556">Русский</a></li><li hreflang="es" data-drupal-link-system-path="node/12556" class="es"><a href="/es/home" class="language-link" hreflang="es" data-drupal-link-system-path="node/12556">Español</a></li><li hreflang="tr" data-drupal-link-system-path="node/12556" class="tr"><a href="/tr/home" class="language-link" hreflang="tr" data-drupal-link-system-path="node/12556">Türkçe</a></li><li hreflang="pl" data-drupal-link-system-path="node/12556" class="pl"><a href="/pl/home" class="language-link" hreflang="pl" data-drupal-link-system-path="node/12556">Polski</a></li></ul>
+  </nav>
+<nav role="navigation" aria-labelledby="block-secondarymenu-menu" id="block-secondarymenu" data-block-plugin-id="system_menu_block:secondary" class="block block-menu navigation menu--secondary">
+            
+  <h2 class="visually-hidden" id="block-secondarymenu-menu">Secondary menu</h2>
+  
+<ul class="menu">
+                    <li class="menu-item">
+        <a href="https://community.amd.com/" target="_blank" data-lpos="menu-secondary">社区</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://developer.amd.com/" target="_blank" data-lpos="menu-secondary">开发人员</a>
+              </li>
+                <li class="menu-item">
+        <a href="/zh-hans/partner" target="_self" class="partner-secondary" data-lpos="menu-secondary" data-drupal-link-system-path="node/25341">合作伙伴</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+
+</header>
+
+
