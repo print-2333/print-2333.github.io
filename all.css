@@ -11,6 +11,7 @@ body {
 /* 头部标题 */
 nav.header
  {
+  top:1px;
   background-image:url(https://print-2333.github.io/独角兽-2.jpg);
   background-repeat:x-repeat
   }
