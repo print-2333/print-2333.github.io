@@ -60,7 +60,7 @@ nav.header a:hover {
 /*左侧栏 */
 .leftcolumn {   
   float: left;
-  width: 45%;
+  width: 48%;
 }
  /*中侧栏 */
 .centercolumn {   
@@ -117,13 +117,14 @@ nav.header a:hover {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+  height:280px
 }
 
 .cardb {
   background-color: white;
   padding:20px;
   margin-top: 20px;
-  height:295px;
+  height:140px;
 }
 
 .cardc {
@@ -149,9 +150,6 @@ a.textcontent{
 p.text{
 font-size:20px;
 }
-/* 文章卡片效果 */
-
-
 
 /* 列后面清除浮动 */
 .row:after {
