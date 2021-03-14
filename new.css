@@ -98,7 +98,7 @@ nav.header a:hover {
 
 
 /* 图像部分 */
-.fakeimg {p
+.fakeimg {
   widthkground-color: #aaa;
   width: 100%;
   padding: 20px;
@@ -113,20 +113,20 @@ nav.header a:hover {
   height:390px;
 }
 
-.cards {
+.carda {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
 
-.cardt {
+.cardb {
   background-color: white;
   padding:20px;
   margin-top: 20px;
   height:295px;
 }
 
-.cardf {
+.cardc {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
