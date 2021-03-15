@@ -13,10 +13,11 @@ nav.header
   }
 
 a.headers{
-  line-height:0px                        
-  padding: 30px;
+  padding:5px;
+  line-height:0px;
   text-align: left;
-  text-decoration:none
+  text-decoration:none;
+  color:purple
 }
 
 nav.header a:hover {
@@ -52,27 +53,27 @@ nav.header a:hover {
 /*左侧栏 */
 .leftcolumn {   
   float: left;
-  width: 48%;
+  width: 50%;
 }
+
  /*中侧栏 */
 .centercolumn {   
   float: left;
-  width: 22%;
-  margin-left:5px;
+  width: 23%;
 }
 
 
 /* 右侧栏 */
 .rightcolumn {
   float: left;
-  width: 22%;
-  margin-left:5px;
+  width: 23%;
+  margin–right:20px;
 }
 
 /*左侧栏 */
 .left {   
   float: left;
-  width: 100%;
+  width: 98%;
 }
 
 
@@ -98,24 +99,31 @@ nav.header a:hover {
 }
  
 /* 文章卡片效果 */
-.card {
-  background-color: white;
-  padding: 5px;
-  margin-top: 20px;
-  height:390px;
-}
+
 
 .carda {
   background-color: white;
   padding: 5px;
-  margin-top: 20px;
-  height:280px
+  height:280px;
+  margin-left:20px;
+  margin-top:20px;
 }
 
 .cardb {
   background-color: white;
   padding:5px;
   height:140px;
+  margin-left:20px;
+  margin-top:20px;
+}
+
+.cardba {
+  background-color: white;
+  padding:5px;
+  height:140px;
+  margin-left:20px;
+  margin-top:20px;
+  margin–bottom:20px;
 }
 
 .cardc {
