@@ -53,7 +53,7 @@ nav.header a:hover {
 /*左侧栏 */
 .leftcolumn {   
   float: left;
-  width: 50%;
+  width: 55%;
 }
 
  /*中侧栏 */
@@ -73,7 +73,7 @@ nav.header a:hover {
 /*左侧栏 */
 .left {   
   float: left;
-  width: 98%;
+  width: 1024px;
 }
 
 
