@@ -53,21 +53,21 @@ nav.header a:hover {
 /*左侧栏 */
 .leftcolumn {   
   float: left;
-  width: 53%;
+  width: 52%;
 }
 
  /*中侧栏 */
 .centercolumn {   
   float: left;
-  width: 23%;
+  width: 24%;
 }
 
 
 /* 右侧栏 */
 .rightcolumn {
   float: left;
-  width: 23%;
-  margin–right:20px;
+  width: 24%;
+  margin–right:10px;
 }
 
 /*左侧栏 */
@@ -104,7 +104,7 @@ nav.header a:hover {
 .carda {
   background-color: white;
   padding: 5px;
-  height:300px;
+  height:310px;
   margin-left:20px;
   margin-top:20px;
 }
@@ -113,7 +113,7 @@ nav.header a:hover {
   background-color: white;
   padding:5px;
   height:140px;
-  margin-left:20px;
+  margin-left:10px;
   margin-top:20px;
 }
 
@@ -121,9 +121,8 @@ nav.header a:hover {
   background-color: white;
   padding:5px;
   height:140px;
-  margin-left:20px;
+  margin-left:10px;
   margin-top:20px;
-  margin–bottom:20px;
 }
 
 .cardc {
