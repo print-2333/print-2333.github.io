@@ -2,7 +2,6 @@
  
 body {
   font-family: Arial;
-  padding: 10px;
   background: #f1f1f1;
 }
  
@@ -101,28 +100,27 @@ nav.header a:hover {
 /* 文章卡片效果 */
 .card {
   background-color: white;
-  padding: 20px;
+  padding: 5px;
   margin-top: 20px;
   height:390px;
 }
 
 .carda {
   background-color: white;
-  padding: 20px;
+  padding: 5px;
   margin-top: 20px;
   height:280px
 }
 
 .cardb {
   background-color: white;
-  padding:20px;
-  margin-top: 20px;
+  padding:5px;
   height:140px;
 }
 
 .cardc {
   background-color: white;
-  padding: 20px;
+  padding: 5px;
   margin-top: 20px;
   width:100%
 }
