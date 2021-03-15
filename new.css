@@ -73,7 +73,7 @@ nav.header a:hover {
 /*左侧栏 */
 .left {   
   float: left;
-  width: 980px;
+  width: 940px;
 }
 
 
@@ -104,7 +104,7 @@ nav.header a:hover {
 .carda {
   background-color: white;
   padding: 5px;
-  height:280px;
+  height:300px;
   margin-left:20px;
   margin-top:20px;
 }
